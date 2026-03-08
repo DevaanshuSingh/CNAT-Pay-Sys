@@ -1,0 +1,72 @@
+.headerContainer {
+    position: fixed;
+    top: 1.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 75rem;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.25rem;
+    /* background: rgba(255, 255, 255, 0.15); */
+    background: rgba(0, 55, 255, 0.466);
+    backdrop-filter: blur(0.75rem);
+    -webkit-backdrop-filter: blur(0.75rem);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 2rem;
+    box-shadow: 0 0.25rem 2rem rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.title {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.enterButton {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    padding: 0.4rem 1.25rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.enterButton:hover {
+    background: rgba(255, 255, 255, 0.611);
+    /* background: #77efbf9d; */
+}
+
+@media (min-width: 768px) {
+    .headerContainer {
+        padding: 0 1.5rem;
+    }
+
+    .enterButton {
+        padding: 0.5rem 1.75rem;
+    }
+}
